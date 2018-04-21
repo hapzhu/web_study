@@ -1,11 +1,54 @@
-/* text-decoration 属性 */
-#div1{
+/* text-decoration 属性  这个属性是叠加的，新加入的不会覆盖掉旧的*/
+
+#div1 table {
     text-decoration: underline;
 }
 
-#div1 table tr {
+
+#div1 a{
+    text-decoration: none;
+    text-decoration: line-through;
+}
+
+#div1 td {
     text-decoration: overline;
 }
-#div1 h2{
-    text-decoration: none;
+
+
+/* text-transform 文字大小写属性 */
+#div2{
+    text-transform: uppercase;
+}
+
+#div3 tbody{
+    text-transform: lowercase;
+}
+#div3 tfoot{
+    text-transform: capitalize;
+}
+
+/*  font-variant属性，字母小型大写*/
+#div4 tbody{
+    font-variant: small-caps
+}
+
+/* text-indent首行缩进 */
+#div3 tfoot{
+    text-indent: 12px;
+}
+
+
+/* text-line 行高 */
+#div4 tbody{
+    line-height: 20px;
+}
+
+/* 字母间距 letter-spacing */
+#div3 tfoot{
+    letter-spacing: 5px;
+}
+
+/* 词间距 letter-spacing */
+#div4 {
+    word-spacing: 10px;
 }
