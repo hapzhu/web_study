@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Boundless Learning</title>
+    <meta name="keywords" content="web,csdn,prigdrems" />
+    <meta name="description" content="从零开始学web开发" />
+    <meta name="author" content="pigdreams" />
+    <meta name="copyright" content="csdn-pigdreams博客版权所有，转载请注明出处!" />
+</head>
+
+<body>
+    <h1>form表单标签示例</h1>
+    <div>
+        <h2>1.表单属性示例</h2>
+        <!-- form标签的各种属性说明,以空格隔开不同属性 -->
+        <form name="pigsForm1" action="http://www.baidu.com" method="GET"
+            target="_blank" enctype="application/x-www-form-urlencoded"
+        >
+        GET默认方式
+        </form>
+        <form name="pigsForm2" action="http://www.baidu.com" method="POST" target="_top" enctype="multipart/form-data">
+        POST上传方式
+        </form>
+    </div>
+    <hr/>
+    <div>
+        <div>
+        <h2>2.表单对象示例之input</h2>
+            <div>
+                <form name="pigsForm3" action="http://www.baidu.com" method="GET" target="_self" enctype="application/x-www-form-urlencoded">
+                <h3>2.1 单行文本框</h3>
+                <input type="text" size="5" maxlength="15"/>
+                可显示5个中文字符,10个英文字符。
+                <br/>
+                但最多只能输入15个字符，不管中英文或者标点符号，只要输入了字符就占一个位置。
+                <h3>2.2密码输入框password</h3>
+                <input type="password" value="abcde" size="10" maxlength="16"/>
+                <br/>
+                属性与text一致,不同之处是输入的文字不会明文显示。
+                </form>
+            </div>
+            <br/>
+            <input type="text" value="abcde" size="10" max="4"/>放在form外面的input。
+          
+            <form name="pigsForm4" action="http://www.baidu.com" method="GET" target="_self" enctype="application/x-www-form-urlencoded">
+            <div>
+                <h3>2.3单选按钮radio</h3>
+                <strong><big><em>编程语言:</em></big></strong>
+                <input type="radio" name="radio_group1" value="Java">Java
+                <input type="radio" name="radio_group1" value="CPlus">C++
+                <input type="radio" name="radio_group2" value="JS">JavaScript(另一组中不互斥)
+                <h3>2.4复选框checkbox</h3>
+                <input type="checkbox" value="php" id="cb1" checked="checked"> <label for="cb1">PHP</label><br/>
+                <input type="checkbox" value="python" id="cb2" ><label for="cb2">Python</label><br/>
+                <input type="checkbox" value="go" id="cb3" ><label for="cb3">GO</label>           
+                <h3>2.5按钮-三种类型</h3>
+                <input type="button" value="普通按钮" title="点我啊!" onclick="alert('普通按钮被点了!')"/>
+                <!-- 点击此按钮会提交表单，即是提交到action中的地址,会跳转到该网站 -->
+                <input type="submit" value="提交按钮" onclick="alert('提交按钮被点了!')" />
+                <!-- 点击此按钮后，会将同一个表单的输入的内容清空，即是上面单选或者多选会被还原为初始状态 -->
+                <input type="reset" value="重置按钮" onclick="alert('重置按钮被点了!')" />
+            </div>
+             <div>
+                <h3>2.6图片域</h3>
+                <h4>可以实现跟button一样的功能,点击会触发提交功能</h4>
+                <input type="image" src="ta3.jpg" title="Dota2 圣堂刺客">
+                <h3>2.7隐藏域hidden</h3>
+                <input type="hidden" value="100"/>
+            </div>
+            </form>
+
+            <div>
+                <form name="pigsForm5" action="http://www.baidu.com" method="POST" target="_blank" enctype="multipart/form-data">
+                   <h3>2.8文件域file</h3>
+                   <input type="file"/>
+                </form>
+            </div> 
+        </div>
+        
+        <div>
+            <h2>3.多行文本框textarea</h2>
+            <form name="pigsForm6" action="http://www.baidu.com" method="GET" target="_self" enctype="application/x-www-form-urlencoded">
+            <textarea name="pisgEt" id="et_p8" cols="20" rows="6">天若有情天若老,月若无恨月长圆。</textarea>
+            </form>
+        </div>
+
+        <div>
+            <h2>4.下拉列表select</h2>
+            <h4>4.1单选列表</h4>
+            <select size="3">
+                <option value="lang1">Java</option>
+                <option value="lang2">C++</option>
+                <option value="lang3" selected="selected">JavaScript</option>
+                <option value="lang4">PHP</option>
+                <option value="lang5">GO</option>
+                <option value="lang6">Python</option>
+                <option value="lang7">Swift</option>
+            </select>
+            <h4>4.2多选列表</h4>
+            <select multiple="multiple" size="4">
+                <option value="lang1" selected="selected">Java</option>
+                <option value="lang2">C++</option>
+                <option value="lang3" >JavaScript</option>
+                <option value="lang4">PHP</option>
+                <option value="lang5">GO</option>
+                <option value="lang6">Python</option>
+                <option value="lang7">Swift</option>
+            </select>
+        </div> 
+        
+    </div>
+</body>
+
+</html>
