@@ -1,0 +1,11 @@
+/* text-decoration 属性 */
+#div1{
+    text-decoration: underline;
+}
+
+#div1 table tr {
+    text-decoration: overline;
+}
+#div1 h2{
+    text-decoration: none;
+}

@@ -1,0 +1,72 @@
+/* h1的字体样式 */
+h1{
+    font-family: 华文琥珀,楷体,微软雅黑;
+    font-size: x-large;
+    color: royalblue;
+    font-weight: bolder;
+    text-align: center;
+    background-color: lavender;
+}
+
+/* h2字体样式 */
+h2{
+     font-family: 楷体,华文新魏,微软雅黑;
+     font-size: 20px;
+     color: darkorange;
+     font-weight: bold;
+}
+/* 群组选择器 */
+#times5_div dt,scan,small{
+    font-family:华文彩云,Arial;
+    font-size: small;
+    font-weight: 100;
+    font-style: italic;
+    color: yellowgreen;
+}
+
+/* 水平线的样式 */
+hr{
+    border-color: orangered;
+}
+
+/* 朝代1 div的样式 */
+#times1_div{
+      font-family: 宋体,微软雅黑,Arial;
+      font-size: 16px;
+      color: #00f;
+      font-weight: 700;
+      font-style: normal;
+}
+
+/* 朝代2 div的样式 */
+#times2_div{
+      font-family: 宋体,微软雅黑,Arial;
+      font-size: 16px;
+      color: #03a;
+      font-weight: 700;
+      font-style: italic;
+}
+
+
+/* 朝代3 div的样式 */
+#times3_div{
+      font-family: 'Times New Roman',Arial;
+      font-size: 16px;
+      color: rgb(138, 34, 95);
+      font-weight:lighter;
+      font-style: oblique;
+}
+
+/* 近现代 ul的样式 */
+#times4_div li{
+    color: lime;
+    font-weight: bold;
+}
+
+.novel_text{
+    font-family: consolas,隶书;
+    font-size: medium;
+    color: magenta;
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,23 @@
+/* 元素选择器 */
+h2{
+    width: 100%;
+    height: 45px;
+    background-color: forestgreen;
+    text-align: center;
+}
+/* id 为div1的风格 */
+#div1{
+    background-color: chocolate;
+    color: gold;
+}
+
+#div2{
+     background-color: rgb(27, 141, 156);
+        color: white;
+}
+
+/* class选择器 div_style */
+.div_style{
+    background-color: rgb(230, 223, 223);
+        color: rgb(165, 16, 158);
+}

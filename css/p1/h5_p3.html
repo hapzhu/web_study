@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>唐诗鉴赏</title>
+    <meta charset="uft-8" />
+    <meta name="keywords" content="web,csdn,prigdrems" />
+    <meta name="description" content="web入门学习" />
+    <meta name="author" content="pigdreams" />
+    <meta name="copyright" content="csdn-pigdreams博客版权所有，转载请注明出处!" />
+    <!-- 外部样式表引用 -->
+    <link rel="stylesheet" href="css_p1.css" type="text/css">
+    <!-- 内部样式表 -->
+    <style type="text/css">
+        h1{
+            text-align: center;
+        }
+        /* 子元素选择器 */
+        #div1 #div1_p1 {
+            text-decoration: underline;
+            color: cornsilk;
+        }
+        #div2 #div2_scan1{
+            text-decoration: line-through;
+        }
+        #div2 scan{
+            text-decoration: underline;
+        }
+        /*相邻元素选择器*/
+        #div1_p1+p{
+            text-decoration: line-through;
+        }
+        /* 群组选择器 */
+        h4,h5,#div1 #div1_h2,#div2_scan1+scan{
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>我最喜爱的王维诗集</h1>
+    <div id="div1">
+        <h2 id="div1_h2"><strong>使至塞上</strong></h1>
+        <h3><small>唐代:王维<sub>1</sub></small></h3>
+        <p>单车欲问边,属国过居延。</p>
+        <p>征蓬出汉塞，归雁入胡天。</p>
+        <p id="div1_p1">大漠孤烟直，长河落日圆。</p>
+        <p>萧关逢候骑，都护在燕然<sup>2</sup>。</p>
+    </div>
+    <hr/>
+    <div  id="div2">
+        <h2><strong>画</strong></h2>
+        <h6><em>唐代:王维</em></h6>
+        <scan>远看山有色,</scan><br/>
+        <scan>近听水无声。</scan><br/>
+        <scan id="div2_scan1">春去花还在,</scan>
+        <scan><em>人来鸟不惊。</em></scan>
+    </div>
+    <hr/>
+    <div  class="div_style">
+        <h4>说明</h4>
+        <p style="color:red;">&nbsp;&nbsp;1.王维（701年&mdash;761年，一说699年—761年），字摩诘，汉族，河东蒲州（今山西运城）人，祖籍山西祁县。<br/>
+            唐朝诗人，有“诗佛”之称。苏轼评价其：“味摩诘之诗，诗中有画；观摩诘之画，画中有诗”。</p>
+        <p>&nbsp;&nbsp;2.燕然:燕然山，即今&lsquo;蒙古国杭爱山&rsquo;。东汉窦宪北破匈奴，曾于此刻石记功。这里代指前线。</p>
+    </div>
+    <hr/>
+    <div class="div_style">
+        <h5>附加内容&#124;数学公式</h5>
+        <p>
+            2&times;3=6<br/>
+            6&divide;2=3<br/>
+            4&lt;2+3&gt;3<br/>
+            (a+b)&times;(a-b)=a<sup>2</sup>-b<sup>2</sup><br/>
+        </p>
+    </div>
+</body>
+</html>
