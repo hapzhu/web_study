@@ -1,0 +1,86 @@
+body{
+    background-image: url(blue020.png);
+    background-position: left left;
+}
+
+/* 去除超链接的下划线 要具体到超链接元素不然无效*/
+#list1 a{
+    text-decoration: none;
+}
+/* 超链接伪类定义 */
+#list1 a:link{
+    /* 未访问时的样式 -绿色  */
+    color: green;
+}
+#list1 a:visited{
+    /* 访问后的样式  -红色*/
+    color: red;
+}
+#list1 a:hover{
+    /* 鼠标经过时的样式 背景色黄色 字蓝色 */
+    background-color: yellow;
+    color: blue;
+}
+#list1 a:active{
+    /* 点击时的样式 紫色 */
+    color: violet;
+}
+
+/* list2 只定义a标签元素与hover即可 不再显示访问后的颜色*/
+#list2 a{
+    text-decoration: none;
+    color: rgb(66, 173, 56);
+    /* 定义鼠标样式 测试无明显显示效果*/
+    cursor: help;
+}
+#list2 a:hover{
+    background-color: violet;
+    color: snow;
+    /* 当鼠标经过时变是正在等待的图标 */
+    cursor: wait;
+}
+
+/* 将hover应用于图片 鼠标经过图片时，显示边框，并变大 */
+#img1 img:hover{
+    border: 5px solid rgb(182, 20, 133);
+    width: 500px;
+    height: 350px;
+}
+
+/* 图片样式 设置大小与边框 */
+#img2 img{
+   height: 185px;
+   weight: 300px;
+   border: 2px dotted blueviolet;
+}
+
+/* 图片样式 图片水平对齐 要在父元素中设置*/
+#img3 h2{
+    /* 要单独设置h2的对齐方式，不然也会变成右对齐 */
+    text-align: center;
+}
+#img3 {
+    /* 右对齐 */
+    text-align: right;
+}
+
+/* 垂直对齐方式 */
+#img3 img{
+    vertical-align: middle;
+}
+
+/* 文字环绕效果与间距 */
+#img4 {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#img5 {
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+

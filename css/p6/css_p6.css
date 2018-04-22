@@ -1,0 +1,109 @@
+h1{
+    /* 背景颜色 */
+    background-color: rgb(198, 238, 104);
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 微软雅黑,宋体;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: x-large;
+    color: orangered;
+
+}
+h2{
+    background-color: #abcdef;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 黑体,Arial;
+    font-size: 16px;
+    font-style: normal;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+/* 背景图像 style1 */
+.style1{
+    /* 图像来源，可以是相对路径或者绝对路径 */
+    background-image: url(../../img/sky1.jpg);
+    /* 样式为不平辅 */
+    background-repeat: no-repeat;
+    /* 图片放置位置 */
+    background-position: 5px 25px;
+}
+
+/* 背景图像 style2 */
+.style2{
+    background-image: url(../../img/sky1.jpg);
+    /* 样式为平辅，默认值 */
+    background-repeat: repeat;
+    /* 图片放置位置 表示从右上开始放置图片并xy方向平铺*/
+    background-position: right top;
+}
+
+/* 背景图像style3 */
+.style3{
+    background-image: url(../../img/sky1.jpg);
+    /* x轴方向平辅 */
+    background-repeat: repeat-x;
+    /* 图片放置位置 正中 */
+    background-position: center center;
+    /* 固定不动 */
+    background-attachment: fixed;
+}
+
+/* 背景图像style4 */
+.style4{
+    background-image: url(../../img/sky1.jpg);
+    /* y轴方向平辅 */
+    background-repeat: repeat-y;
+    /* 图片位置 左下 */
+    background-position: left bottom;
+    /* 滚动图像，默认值 */
+    background-attachment: scroll;
+}
+
+caption{
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(198, 228, 32);
+}
+/* 边框样式1 实线 整体边框效果 */
+.style1 table{
+    border-width: 2px;
+    border-style: solid;
+    border-color: brown;
+}
+
+/* 边框样式2 虚线  */
+.style2 table,.style2 td {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: rgb(8, 112, 119);
+}
+
+/* 边框样式3 点线 */
+.style3 table,.style3 h2,.style3 td{
+    border-width: 2px;
+    border-style: dotted;
+    border-color: tomato;
+}
+
+/* 双实线 与简便写法 */
+div{
+    border:blue double 3px  ;
+    color: white;
+}
+
+/* 局部边框样式 */
+.style4 table{
+    border-top: 2px solid greenyellow;
+    border-right-width:5px;
+    border-right-style: groove; 
+    border-color: dodgerblue;
+}
+.style4 {
+    border-top: none;
+}
+th{
+    border-right: 2px dashed orange;
+}
