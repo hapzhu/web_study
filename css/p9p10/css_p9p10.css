@@ -1,0 +1,45 @@
+/* 列表样式 小写罗马数字 */
+#list1 ol{
+    list-style-type: lower-roman;
+}
+
+/* 希腊小写字母 */
+#list2 ol{
+    list-style-type: lower-greek;
+}
+/* 无序列表项 空心圆 */
+#list3 ul{
+    list-style-type: circle;
+}
+/* 自定义列表项 */
+#list4 ul{
+    list-style-image: url(pn16.gif)
+}
+
+table,th,td {
+    border: 2px solid burlywood;
+}
+
+caption{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: cornflowerblue;
+    font-style: oblique;
+}
+
+/* 表格边框合并 */
+.style1 table{
+    border-collapse: collapse;
+}
+
+/* 增加间距 */
+
+.style2 table{
+    border-spacing: 10px 5px;
+}
+
+/* 表格标题放在下面 */
+.style3 table{
+    caption-side: bottom;
+}
