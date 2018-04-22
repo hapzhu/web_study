@@ -1,0 +1,63 @@
+h1{
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 微软雅黑,宋体;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: x-large;
+    color: orangered;
+
+}
+h2{
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 黑体,Arial;
+    font-size: 16px;
+    font-style: normal;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+caption{
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(198, 228, 32);
+}
+/* 边框样式1 实线 整体边框效果 */
+.style1 table{
+    border-width: 2px;
+    border-style: solid;
+    border-color: brown;
+}
+
+/* 边框样式2 虚线  */
+.style2 table,.style2 td {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: rgb(8, 112, 119);
+}
+
+/* 边框样式3 点线 */
+.style3 table,.style3 h2,.style3 td{
+    border-width: 2px;
+    border-style: dotted;
+    border-color: tomato;
+}
+
+/* 双实线 与简便写法 */
+div{
+    border:blue double 3px  ;
+}
+
+/* 局部边框样式 */
+.style4 table{
+    border-top: 2px solid greenyellow;
+    border-right-width:5px;
+    border-right-style: groove; 
+    border-color: dodgerblue;
+}
+.style4 {
+    border-top: none;
+}
+th{
+    border-right: 2px dashed orange;
+}
