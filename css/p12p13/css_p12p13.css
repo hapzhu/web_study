@@ -1,0 +1,33 @@
+#p1{
+    float: left;
+    background-color: rgb(37, 172, 235);
+}
+#p2{
+   background-color: rgb(220, 235, 21);
+}
+
+#p3{
+ float:right;
+ background-color: rgb(37, 172, 235);
+}
+
+#p4{
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    background-color: cornflowerblue;
+}
+
+#p5{
+    position: relative;
+    top: 50px;
+    left: 50px;
+     background-color: cornflowerblue;
+}
+
+#p6{
+    position: absolute;
+    top: 350px;
+    left: 300px;
+     background-color: cornflowerblue;
+}

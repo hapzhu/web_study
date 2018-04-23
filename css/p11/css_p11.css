@@ -1,0 +1,47 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    color: darkorange;
+    background-color: gainsboro;
+}
+
+#div0{
+    background-color: rgb(94, 49, 65);
+}
+#div1{
+    /* 盒子模型 */
+    /* 内容大小*/
+    width: 500px;
+    height: 200px;
+    /* 边框 */
+    border: 2px dashed salmon;
+    /* 内边距 */
+    padding: 20px 30px;
+    /* 外边距 */
+    margin: 50px;
+    background-color: lightslategrey;
+}
+#div2{
+    /* 盒子模型 */
+    /* 内容大小*/
+    width: 300px;
+    height: 300px;
+    /* 边框 */
+    border: 3px solid rgb(133, 155, 8);
+    /* 内边距 */
+    padding: 20px 25px 35px 30px;
+    /* 外边距 */
+    margin: 30px 50px;
+    background-color: rgb(24, 87, 150);
+}
+/* 实践得知，margin-top 与margin-bottom子元素对父元素不起作用 */
+p{
+    width: 500px;
+    height: 100px;
+    color: red;
+    padding: 10px;
+    margin: 10px;
+    border: 2px dotted black;
+}
