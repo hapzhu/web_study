@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Boundless Learning</title>
+    <meta name="keywords" content="web,csdn,prigdrems" />
+    <meta name="description" content="从零开始学web开发" />
+    <meta name="author" content="pigdreams" />
+    <meta name="copyright" content="csdn-pigdreams博客版权所有，转载请注明出处!" />
+    <script>
+    alert("Hello World!");
+    </script>
+    
+    <style>
+        h1{
+            text-align: center;
+            background-color: burlywood;
+            color: brown;
+        }
+        h3{
+            text-align: center;
+            font-size: x-large;
+            color: darkgoldenrod;
+            background-color: blanchedalmond;
+        }
+        p{
+            color: deeppink;
+        }
+    </style>
+    <link rel="stylesheet" href="js_p1.css">
+    <script src="js_p1.js"></script>
+</head>
+
+<body>
+    <button onclick="window.alert(document.title)">document读取属性</button>
+    <script>
+        document.write("<h1>JavaScript create h1!</h1>");
+        document.write("<h2>JavaScript create h2!</h2>");
+    </script>
+    <!-- 网页显示后再用document.write会将原有内容覆盖 -->
+    <button onclick="poem()">加载唐诗</button>
+</body>
+
+</html>
