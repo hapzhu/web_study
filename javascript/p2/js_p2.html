@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="web,csdn,prigdrems" />
+    <meta name="description" content="从零开始学web开发" />
+    <meta name="author" content="pigdreams" />
+    <meta name="copyright" content="csdn-pigdreams博客版权所有，转载请注明出处!" />
+    <title>Boundless Learning</title>
+    <link rel="stylesheet"  href="js_p2.css" />
+    <script src="js_p2.js"></script>
+</head>
+<body>
+    <div>
+        <h1 >JavaScript 变量与运算符</h1>
+    </div>
+    <div>
+        <h2 class="head-style">1.定义变量</h2>
+        <script>
+            //不声明变量直接赋值
+            movieName = "唐人街神探2";
+            console.log(movieName);
+            alert(movieName);
+            //用var进行变量声明
+            var movieMinute = 121;
+            var movieDate = "2018-02-16";
+            console.log(movieMinute,movieDate);
+            //一次性声明多个变量
+            var movieType = "喜剧,动作,悬疑",movieLang = "chinese",movieArea = "中国大陆";
+            console.log(movieArea + "\n" + movieLang +"\t"+ movieType);
+
+        </script>
+        <p>请在调试模式下查看log,crtl+shift+i</p>
+    </div>
+    <hr/>
+    <div>
+        <h2 class="head-style">2.四则运算与求余</h2>
+        <script>
+            var a = 3,b =4;
+        </script>
+        <button onclick="alert(add(a,b))">加法</button>
+        <button onclick="alert(sub(a,b))">减法</button>
+        <button onclick="alert(mul(a,b))">乘法</button>
+        <button onclick="alert(div(a,b))">除法</button>
+        <button onclick="alert(mod(10,3))">求余</button>
+    </div>
+    <hr/>
+    <div>
+        <h2 class="head-style">3.自增与自减</h2>
+        <button onclick="alert(a++)">自增</button>
+        <button onclick="alert(a--)">自减</button>
+        <button onclick="alert(++b)">加放前面</button>
+        <button onclick="alert(--b)">减放前面</button>
+    </div>
+</body>
+</html>
