@@ -7,4 +7,5 @@ function poem() {
     document.write("<p>处处闻啼鸟。</p>"); document.write("<p>夜来风雨声,</p>");
     document.write("<p>花来知多少。</p>");
     document.write("<h5>唐诗三百首之一</h5>");
+    console.log("加载唐诗完毕!")
 }
