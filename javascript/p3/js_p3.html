@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="web,csdn,prigdrems" />
+    <meta name="description" content="从零开始学web开发" />
+    <meta name="author" content="pigdreams" />
+    <meta name="copyright" content="csdn-pigdreams博客版权所有，转载请注明出处!" />
+    <title>Boundless Learning</title>
+    <script src="js_p3.js"></script>
+    <link rel="stylesheet" href="js_p3.css">
+</head>
+
+<body>
+    <h1>数据类型</h1>
+    <div>
+        <h2>一.数值</h2>
+        <div>
+            <h3>1.整数与浮点数</h3>
+            <scan>请使用调试模式查看结果</scan>
+            <script>
+                console.log("1.整数与浮点数");
+                var a;
+                a = 3;
+                console.log(a);
+                a= 3.4;
+                console.log(a);
+                a = 3 === 3.0;
+                console.log(a);
+                a = 0.1 + 0.2;//会出现浮点数运算溢出的结果
+                console.log(a);
+                a = (0.1 * 10 + 0.2 * 10)/10;//转换成整数运算，可以避免浮点数溢出的后果
+                console.log(a);
+            </script>
+        </div>
+        <div>
+            <h3>2.数值表示法</h3>
+            <scan>请使用调试模式查看结果</scan>
+            <script>
+                console.log("2.数值表示法");
+                var b;
+                b = 100;//十进制
+                console.log(b);
+                b = 0o100;//八进制,64
+                a = 0111;//八进制,73
+                console.log(b + ","+a);
+                b = 0x100;//十六进制256
+                console.log(b);
+                b = 0b100;//二进制
+                console.log(b);
+               b = 5.125e5;//科学计数法
+               console.log(b);
+                b = 1234567890123456789012;//整数部分大于21位，自动用科学计数法
+                console.log(b);
+                b = 0.00000012;//小数点的零多于5位(不包括5)，自动用科学计数法
+                console.log(b);     
+            </script>
+        </div>
+        <div>
+            <h3>3.特殊数值NaN</h3>
+            <ul>
+                <li><button onclick="nan1()">计算1-'a'</button></li>
+                <li><button onclick="nan2()">NaN===NaN</button></li>
+                <li><button onclick="nan3()">1+NaN</button> 
+                    <button onclick="nan4()">2*NaN</button></li>
+                <li><button onclick="nan5()">NaN/NaN</button></li>
+            </ul>
+            <h4>isNaN()函数</h4>
+            <button onclick="isNan1(NaN)">NaN</button>
+            <button onclick="isNan1(666)">666</button>
+            <button onclick="isNan1('666')">"666"</button>
+            <button onclick="isNan1('abc')">"abc"</button>
+            <button onclick="isNan1({})">{}</button>
+            <button onclick="isNan1([])">[]</button>
+        </div>
+        <div>
+            <h3>4.特殊数值Infinity</h3>
+            <ul>
+            <li>
+                <button onclick="infinity1()">1/0</button>
+                <button onclick="infinity2()">1/-0</button>
+            </li>
+            <li>
+                <button onclick="infinity3()">Infinity &gt;NaN</button>
+                <button onclick="infinity4()">Infinity &lt; NaN</button>
+                <button onclick="infinity5()">-Infinity &gt;NaN</button>
+                <button onclick="infinity6()">-Infinity &lt; NaN</button>
+            </li>
+            <li>
+            <button onclick="infinity7(0)">Infinity*0</button>
+            <button onclick="infinity8(0)">0/Infinity</button>
+            <button onclick="infinity9(0)">Infinity/0</button>
+            </li>
+            <li>
+                <button onclick="infinity7(null)">Infinity*null</button>
+                <button onclick="infinity8(null)">null/Infinity</button>
+                <button onclick="infinity9(null)">Infinity/null</button>
+            </li>
+            <li>
+                <button onclick="infinityAdd(undefined)">infinity + undefined</button>
+                <button onclick="infinitySub(undefined)">infinity - undefined</button>
+                <button onclick="infinityMul(undefined)">infinity * undefined</button>
+                <button onclick="infinityDiv(undefined)"> undefined/infinity</button>
+            </li>
+            <li>
+                <button onclick="infinityAdd(Infinity)">infinity + infinity</button>
+                <button onclick="infinitySub(Infinity)">infinity - infinity</button>
+                <button onclick="infinityMul(Infinity)">infinity * infinity</button>
+                <button onclick="infinityDiv(Infinity)"> infinity/infinity</button>
+            </li>
+            isFinite()函数,该函数用来判断值是否是数值，不是判断值是否为Infinity
+            <li>
+                <button onclick="isfinite(Infinity)">Infinity</button>
+                <button onclick="isfinite(-2)">-2</button>
+                <button onclick="isfinite(false)">false</button>
+                <button onclick="isfinite(NaN)">NaN</button>
+            </li>
+           
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
