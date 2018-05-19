@@ -120,6 +120,71 @@
             </ul>
         </div>
     </div>
+    <div>
+        <h2>二.字符串</h2>
+        打开调试模式查看结果
+        <hr/>
+        <script>
+            //字符串定义与字面量
+            var str1 = "Hello World!";//双引号定义
+            var str2 = 'hello world!';//单引号定义
+            console.log(str1+"\n"+str2);
+            str1 = "Hello 'World'!";//双引号中包含单引号
+            str2 = 'hello "world"!';//单引号中包含双引号
+            console.log(str1 + "\n" + str2);
+            //多行书写字符串
+            var str3 = "第一个不曾起舞\
+的日子,\
+都是对生命的辜负\
+            "; 
+        </script>
+        <button onclick="alert(str3)">尼采说</button>
+        <div>
+            <h3>转义字符</h3>
+             打开调试模式查看结果
+             <script>
+                 str1 = "null,\0,\u0000";//null字符显示为空
+                console.log(str1);
+                str1 = "后退符,\b,\u0008";
+                console.log(str1);
+                str1 = "制表符,1\t,2\u0009";
+                console.log(str1);
+                 str1 = "换行符,1\n,2\u000A";
+                console.log(str1);
+                str1 = "垂直制表符,1\v,2\u000B";
+                console.log(str1);
+                str1 = "换页符,1\f,2\u000C";
+                console.log(str1);
+                str1 = "回车符,1\r,2\u000D";
+                console.log(str1);
+                str1 = "反斜杠与单双引号,\\,\u005C,\"a\",\'b\'";
+                console.log(str1);
+                str1 = "版权符号,1\251,2\xa9,3\u00a9";
+                console.log(str1);
+                var a ="Hello World!";
+             </script>
+        </div>
+        <div>
+            <h3>字符数组与长度</h3>
+            <scan>Hello World!</scan> <br/>
+            <button onclick="alert(a[0])">第1位</button>
+            <button onclick="alert(a[1])">第2位</button>
+            <button onclick="alert(a[2])">第3位</button>
+            <button onclick="alert(a[3])">第4位</button>
+            <button onclick="alert(a[4])">第5位</button>
+            <button onclick="alert(a[5])">第6位</button>
+            <button onclick="alert(a[a.length-1])">最后一位</button>
+            <button onclick="alert(a.length)">字符长度</button>
+        </div>
+
+        <div>
+            <h3>base64</h3>
+            <ol>
+                <li><button onclick="alert(btoa(a))">btoa 字符转为base64</button></li>
+                <li><button onclick="alert(atob('SGVsbG8gV29ybGQh'))">atob base64转为字符</button></li>
+            </ol>
+        </div>
+    </div>
 </body>
 
 </html>
