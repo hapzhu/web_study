@@ -183,8 +183,89 @@
                 <li><button onclick="alert(btoa(a))">btoa 字符转为base64</button></li>
                 <li><button onclick="alert(atob('SGVsbG8gV29ybGQh'))">atob base64转为字符</button></li>
             </ol>
+        </div>  
+    </div>
+
+    <div>
+        <h2>三、布尔值</h2>
+         打开调试模式查看结果,<strong>b1=true,b2=false</strong><br/>
+         <script>
+             var b1 = true;
+             console.log(b1);
+             var b2 = false;
+             console.log(b2);
+             if(b1){
+                 console.log("true-输出b1");    
+             }else{
+                 console.log("false-输出b2")
+             }             
+         </script>
+         <button onclick="alert(b1&&b2)">b1&amp;&amp;b2</button>
+         <button onclick="alert(b1||b2)">b1&#124;&#124;b2</button>
+         <button onclick="alert(!b1)">b1取反</button>
+         <button onclick="alert(!b2)">b2取反</button>
+         <p>特殊值取反</p>
+        <button onclick="alert(!null)">null取反</button>
+        <button onclick="alert(!undefined)">undefined取反</button>
+        <button onclick="alert(!NaN)">NaN取反</button>
+        <button onclick="alert(!'')">空字符取反</button> 
+        <button onclick="alert(!Infinity)">Infinity取反</button>
+
+        <div>
+            <h3>1.相等比较符</h3>
+             打开调试模式查看结果
+            <script>
+                //严格相等比较符,不但比较值，还比较类型
+                console.log(1==="1");
+                console.log(true==="true");
+                //如果比较的是对象，则两个对象地址一致则返回true
+                console.log({}==={});//false,两者都是新的对象
+                var o1 = {};
+                var o2 = o1;
+                console.log(o1===o2);
+                //严格不相等比较符
+                console.log("严格不相等比较符");
+                console.log(1!=="1");//与===运算结果相反
+                console.log(true!=="true");
+                console.log(o1!==o2);
+                
+                 console.log("相等比较符,只比较值的大小是否相同");
+                 console.log(1 == "1");
+                console.log(true == "true");
+                console.log("null=='null'",null=="null");
+                console.log("1==true",1 == true);
+                console.log("1!=true",1 != true);
+            </script>
+        </div>
+        <div>
+            <h3>2.大小比较符</h3>
+            <button onclick="alert(true>false)">true&gt;false</button>
+            <button onclick="alert('a'>1)">a&gt;1</button>
+            <button onclick="alert('a'<'1')">a&lt;1</button>
+            <button onclick="alert(NaN>1)">NaN&gt;1</button>
+            <button onclick="alert(NaN<1)">NaN&lt;1</button>
+            <button onclick="alert('11'>'2')">"11"&gt;"2"</button>
+            <button onclick="alert('11'<'2')">"11"&lt;"2"</button>
+        </div>
+        <div>
+            <h3>3.三元运算符</h3>
+            <button onclick="alert(b1?'b1':'b2')">b1?"b1":"b2"</button>
+            <button onclick="alert(b2?'b1':'b2')">b2?"b1":"b2"</button>
+        </div>
+        <div>
+            <h3>4.位运算符</h3>
+            <button onclick="alert(0x03&0x01)">0x03 &amp;0x01</button>
+            <button onclick="alert(0x03|0x01)">0x03 &#124;0x01</button>
+            <button onclick="alert(~0x01)">~0x01</button>
+            <button onclick="alert(0x03^0x01)">0x03 ^0x01</button>
+            <button onclick="alert(3<<2)">3<<2</button>
+            <button onclick="alert(8>>2)">8>>2</button>
+            <button onclick="alert(-1>>1)">-1>>1</button>
+            <button onclick="alert(-1>>>1)">-1>>>1</button>
+
         </div>
     </div>
+
 </body>
 
 </html>
