@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="web,csdn,prigdrems" />
+    <meta name="description" content="从零开始学web开发" />
+    <meta name="author" content="pigdreams" />
+    <meta name="copyright" content="csdn-pigdreams博客版权所有，转载请注明出处!" />
+    <title>Boundless Learning</title>
+</head>
+<body>
+    <div>
+        <h2>一、null与undefined</h2>
+        打开调试模式查看结果
+        <script>
+            var a = null;
+            console.log("a",a);
+            var b = undefined;
+            console.log("b",b);
+            var c;
+            console.log("c",c);
+            console.log("a===b",a === b);
+            console.log("a==b",a == b);
+            console.log(null === undefined);
+            console.log(a == c);
+            
+        </script>
+    </div>
+    <div>
+        <h2>二、对象</h2>
+        <script>
+            var student = {
+                name : "jack",
+                age : 18,
+                height:180
+            }
+            var student2;
+            function v2() {
+                student2 = student;
+                student2.name = "willam";
+                alert(JSON.stringify(student));
+            }
+             function v3() {
+                    student = "新值";
+                    alert("student=" +student+"\nstudent2 = "+JSON.stringify(student2));
+                }
+        </script>
+        <button onclick="alert(student.name+','+student.age+','+student.height)">按属性输出对象</button>
+        <button onclick="alert(JSON.stringify(student))">整体对象JSON</button>
+        <button onclick="v2()">更改对象地址</button>
+        <button onclick="v3()">对象重新赋值</button>
+        
+    </div>
+</body>
+</html>
