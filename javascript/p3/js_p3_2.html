@@ -50,7 +50,114 @@
         <button onclick="alert(JSON.stringify(student))">整体对象JSON</button>
         <button onclick="v2()">更改对象地址</button>
         <button onclick="v3()">对象重新赋值</button>
-        
+        <br/>
+        <script>
+        //三种方式创建一个对象
+        //方式一:
+        var studenta = {
+            name: "rose1",
+            age: 18,
+            height: 170
+        };
+        //方式二：
+        var studentb = new Object();
+        studentb.name = "rose2";
+        studentb.age = 18;
+        studentb.height = 170;
+
+        //方式三:
+        var studentc = Object.create(Object.prototype);
+         studentc.name = "rose3";
+            studentc.age = 18;
+            studentc.height = 170;
+        </script>
+        <h4>创建对象的三种方式</h4>
+        <button onclick="alert(JSON.stringify(studenta))">方式一:studenta</button>
+        <button onclick="alert(JSON.stringify(studentb))">方式二:studentb</button>
+        <button onclick="alert(JSON.stringify(studentc))">方式三:studentc</button>
+        <h4>读取属性</h4>
+        <button onclick="alert(studenta.name)">方式一:用点</button>
+        <button onclick="alert(studentb['name'])">方式二:用方括号</button>
+        <h4>检查是否存在属性</h4>
+        <button onclick="alert('name' in studenta)">方式一:in</button>
+        <button onclick="alert(studentb.hasOwnProperty('name'))">方式二:hasOwnProperty</button>
+        <h4>遍历属性</h4>
+        <script >
+            var arr=[];
+            var i = 0;
+            for(arr[i++] in studentb);
+        </script>
+        <button onclick="alert(Object.keys(studentb))">方式一:keys</button>
+        <button onclick="alert(arr)">方式二:for-in</button>
+        <h4>删除属性</h4>
+        <button onclick="alert(delete studenta.height)">删除a的name</button>
+        <button onclick="alert(delete studentb.age)">删除b的age</button>
+        <h4>with关键字</h4>
+        <script>
+            with(student){
+                name = "jack_plus";
+                age = 19;
+                height = 181;
+            }
+        </script>
+        <button onclick="alert(JSON.stringify(student))">输出jack</button>
+    </div>
+    <div>
+        <h2>三、类型转换</h2>
+        <div>
+            <h3>typeof表达式</h3>
+            <button onclick="alert(typeof 1)">数字1</button>
+            <button onclick="alert(typeof '1')">字符'1'</button>
+            <button onclick="alert(typeof (2>3))">布尔值</button>
+            <button onclick="alert(typeof f1)">函数</button>
+            <button onclick="alert(typeof undefined)">undefined</button>
+            <button onclick="alert(typeof null)">null</button>
+            <button onclick="alert(typeof {})">空对象{}</button>
+            
+
+        </div>
+        <script >
+            function f1(params) {
+                alert(params);
+            }
+        </script>
+        <div>
+            <h3>Number构造函数</h3>
+            <button onclick="alert(Number(true))">布尔值true</button>
+            <button onclick="alert(Number(12.3))">数值12.3</button>
+            <button onclick="alert(Number('12.3'))">字符串'12.3'</button>
+            <button onclick="alert(Number('12.3a'))">字符串'12.3a'</button>
+            <button onclick="alert(Number(''))">空字符串</button>
+            <button onclick="alert(Number(null))">null</button>
+            <button onclick="alert(Number(undefined))">undefined</button>
+            <button onclick="alert(Number(NaN))">NaN</button>
+            <button onclick="alert(Number({'a':1,'b':2}))">对象{"a":1,"b":2}</button>
+            <button onclick="alert(Number([6]))">数组[6]</button>
+            <button onclick="alert(Number([6,1]))">数组[6,1]</button>
+        </div>
+        <div>
+            <h3>String构造函数</h3>
+            <button onclick="alert(String(false))">布尔值false</button>
+            <button onclick="alert(String(12.3))">数值12.3</button>
+            <button onclick="alert(String(null))">null</button>
+            <button onclick="alert(String(undefined))">undefined</button>
+            <button onclick="alert(String({a:1}))">对象{a:1}</button>
+            <button onclick="alert(String([9,5,2,7]))">数组[9,5,2,7]</button>
+        </div>
+        <div>
+            <h3>Boolean构造函数</h3>
+            <button onclick="alert(Boolean(true))">布尔值true</button>
+            <button onclick="alert(Boolean(new Boolean(false)))">布尔值Boolean(false)对象</button>
+            <button onclick="alert(Boolean(null))">null</button>
+            <button onclick="alert(Boolean(undefined))">undefined</button>
+            <button onclick="alert(Boolean(''))">空字符</button>
+            <button onclick="alert(Boolean(0))">数字0</button>
+            <button onclick="alert(Boolean(1))">数字1</button>
+            <button onclick="alert(Boolean(NaN))">NaN</button>
+            <button onclick="alert(Boolean(Infinity))">Infinity</button>
+            <button onclick="alert(Boolean({}))">空对象{}</button>
+
+        </div>
     </div>
 </body>
 </html>
